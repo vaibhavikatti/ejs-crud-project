@@ -16,7 +16,7 @@ app.use(express.json())
 app.set('view engine','ejs')
 app.set('views','./view')
 
-//default route
+//home /default route
 app.use(`/`,require('./route/userRoute'))
 
 //server listen

@@ -12,7 +12,8 @@ const submitHandler = async (event) =>{
         age:fAge.value
 
     }
-    console.log(`new user submitted`,data)
+    console.log(`new user submitted`,data);
+    
     await fetch(`http://localhost:4500/api/user/new`,{
         method:"POST",
         headers:{
